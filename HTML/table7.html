@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 7</title>
+    <style>
+        .table{
+            background-color:#d9d9d9;
+            border:0; 
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+            margin: 0px 30px;
+        }
+        table {border-radius: 3px; text-align: center;}
+        .table td,table td{
+            border: 0;
+            border-collapse: collapse;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+        caption{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .inner_table td{
+            border: 1.5px solid #8d87e6;
+        }
+    </style>
+</head>
+<body>
+
+<section style="display: flex;">
+
+    <table class="table" style="background-color: #d6ddff;">
+        <caption>Non-Semantic HTML</caption>
+        <tr style="background-color: #adbbeb;">
+            <td colspan="2" style="font-size: 25px;">Div</td>
+        </tr>
+        <tr style="background-color: #f7f26c;">
+            <td colspan="2" style=" padding: 3px;">Span</td>
+        </tr>
+        <tr>
+            <td style="background-color: #adbbeb;">Div</td>
+            <td style="background-color: #adbbeb;">
+                Div
+                <table class="inner_table" >
+                    <td style="padding-bottom: 0;">     
+                        Div
+                        <table>
+                            <tr>
+                                <td>Div</td>
+                            </tr>
+                            <tr>
+                                <td>Div</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <tr>
+                        <td>Div</td>
+                    </tr>
+                </table>
+            </td>   
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #adbbeb;">Div</td>
+        </tr>
+    </table>
+
+    <table class="table">
+        <caption>Semantic HTML</caption>
+        <tr style="background-color: #d95a63;">
+            <td colspan="2" style="font-size: 25px;">Header</td>
+        </tr>
+        <tr style="background-color: #4ba266;">
+            <td colspan="2" style=" padding: 3px;">Nav</td>
+        </tr>
+        <tr>
+            <td style="background-color: #d38873;">Aside</td>
+            <td style="background-color: #81c0c7;">
+                Main
+                <table style="background-color: #2fa5a8;">
+                    <td style="padding-bottom: 0;">     
+                        Article
+                        <table>
+                            <tr style="background-color: #d19938;">
+                                <td>Figure</td>
+                            </tr>
+                            <tr style="background-color: #b0b814;">
+                                <td>P</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <tr>
+                        <td style="background-color: #038fbb;">Section</td>
+                    </tr>
+                    <!-- <table>
+                        <tr style="background-color: #038fbb;">
+                            <td>Section</td>
+                        </tr>
+                    </table>                    -->
+                </table>                
+            </td>   
+        </tr>
+        <tr >
+            <td colspan="2" style="background-color: #7c79da;">Footer</td>
+        </tr>
+       
+    </table>
+
+</section>
+    
+</body>
+</html>

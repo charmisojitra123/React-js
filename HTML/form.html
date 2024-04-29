@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            border: 3px double black;
+            padding: 12px;
+            margin: auto;
+        }
+        .main_section{
+            background-color: #00ffea;
+            width: 40%;
+            padding: 30px;
+            margin: auto;
+        }
+        form{
+            padding-top: 30px;
+            text-align: left;
+        }
+        form label{margin-right: 50px; font-size: 18px;}
+        form input{padding: 8px; font-size: 15px;}
+    </style>
+</head>
+<body>
+     
+    <section class="main_section">
+        <h1>Student Registration Form</h1>
+        <form action="">
+            <label for="name">Name :</label>
+            <input type="text" placeholder="Enter full name" style="margin-left: 61px;">
+            <br><br>
+            <label for="fname">Father's Name :</label>
+            <input type="text">
+            <br><br>
+            <label for="mname">Mother's Name :</label>
+            <input type="text"  style="margin-left: -6px;">
+            <br><br>
+            <label for="tel">Phone Number :</label>
+            <input type="number" name="" id="" style="margin-left: -2px;">
+            <br><br>
+            <label for="email">Email :</label>
+            <input type="email" name="" id="" placeholder="sample@example.com"  style="margin-left: 65px;">
+            <br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="" style="margin-left: 56px; margin-right: 6px;">Male
+            <input type="radio" name="gender" id="" style="margin-left: 15px; margin-right: 6px;">Female
+            <input type="radio" name="gender" id="" style="margin-left: 15px; margin-right: 6px;">Other
+            <br><br>
+            <label for="dateofbirth">Date Of Birth :</label>
+            <input type="datetime-local" name="" id="" style="margin-left: 10px;">
+            <br><br>
+            <label for="address">Address :</label>
+            <input type="text" name="" id="" style="margin-left: 51px;">
+            <br><br>
+            <label for="bloodGroup">Blood Group :</label>
+            <select name="" id="" style="margin-left: 17px;">
+                <option value="a1">A+</option>
+                <option value="a2">A-</option>
+                <option value="b1">B+</option>
+                <option value="b2">B-</option>
+            </select>
+            <br><br>
+            <label for="department">Department :</label>
+            <input type="radio" name="depart" id="" style="margin-left: 27px; margin-right: 6px;">CSE
+            <input type="radio" name="depart" id=""style="margin-left: 15px; margin-right: 6px;">EEE
+            <input type="radio" name="depart" id=""style="margin-left: 15px; margin-right: 6px;">BBA
+            <br><br>
+            <label for="course">Course :</label>
+            <input type="checkbox" name="c" id="" style="margin-left: 61px; margin-right: 6px;">C
+            <input type="checkbox" name="c2" id=""style="margin-left: 15px; margin-right: 6px;">C++
+            <input type="checkbox" name="java" id=""style="margin-left: 15px; margin-right: 6px;">Java
+            <input type="checkbox" name="ai" id=""style="margin-left: 15px; margin-right: 6px;">AI
+            <input type="checkbox" name="machine" id=""style="margin-left: 15px; margin-right: 6px;">Machine learning
+            <input type="checkbox" name="roboties" id=""style="margin-left: 15px; margin-right: 6px;">Roboties
+            <br><br>
+            <label for="photo">Photo :</label>
+            <input type="file" name="" id="" style="margin-left: 61px;">
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+    
+</body>
+</html>

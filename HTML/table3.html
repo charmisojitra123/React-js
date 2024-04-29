@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 3</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        table,tr,th,table table td{
+            border: 2px solid #fb9ad9;
+        }
+        table table,
+        table table td { border: 2px solid #b642cc;}
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table 3</caption>
+        <tr>
+            <th>Table 1</th>
+            <th>
+                <table>
+                    <caption>Table 1</caption>
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                    <tr>
+                        <td>Table 2</td>
+                        <td>Table 2</td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+        <tr>
+            <th>This contains a list
+                <ul>
+                    <li>item -1 </li>
+                    <li>item - 2</li>
+                </ul>
+            </th>
+            <th>Table 1</th>
+        </tr>
+    </table>
+</body>
+</html>
