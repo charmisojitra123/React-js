@@ -1,0 +1,28 @@
+/* Box Model */
+.box{
+    border: 5px solid red;
+    padding: 40px;
+    margin: 40px;
+}
+
+/* Initial */
+.parent1{
+    color: purple;
+}
+p{
+    color: blue;
+}
+p{
+    color: initial;
+}
+
+/* Inherit */
+.parent{
+    color: purple;
+}
+p{
+    color: blue;
+}
+p{
+    color: inherit;
+}
