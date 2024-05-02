@@ -1,0 +1,67 @@
+/* Color CSS */
+.hex_color{
+    color: #32a852;
+}
+.rgb_color{
+    color: rgb(199, 24, 181);
+}
+.hsl_color{
+    color: hsl(15, 100%, 50%);
+}
+
+/* Background Color CSS */
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.hex_bg{
+    background-color: #71ded3;
+}
+.rgb_bg{
+    background-color: rgb(222, 213, 113);
+}
+.hsl_bg{
+    background-color: hsl(302, 100%, 76%);
+}
+
+/* Border CSS */
+.border
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #699307;
+}
+
+/* Border Radius CSS */
+.radius{
+    border: 5px solid blue;
+    border-radius: 20px;
+}
+
+/* Border Style CSS */
+.solid{
+    border: 3px solid crimson;
+}
+.dotted{
+    border: 3px dotted crimson;
+}
+.dashed{
+    border: 3px dashed crimson;
+}
+.double{
+    border: 3px double crimson;
+}
+.groove{
+    border: 3px groove crimson;
+}
+.ridge{
+    border: 3px ridge crimson;
+}
+.inset{
+    border: 3px inset crimson;
+}
+.outset{
+    border: 3px outset crimson;
+}
+

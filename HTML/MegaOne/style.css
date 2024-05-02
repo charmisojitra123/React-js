@@ -42,28 +42,6 @@ body{
     text-align: center;
     position: relative;
 }
-/* .span_left{
-    position: relative;
-    top: 16px;
-    left: -60px;
-    height: 3px;
-    width: 50px;
-    background: var(--color-1);
-    display: block;
-    opacity: 1;
-    z-index: 99;
-}
-.span_right{
-    position: relative;
-    top: -17px;
-    right: -250px;
-    height: 3px;
-    width: 50px;
-    background: var(--color-1);
-    display: block;
-    opacity: 1;
-    z-index: 99;
-} */
 .title::before{
     content: "";
     position: absolute;
@@ -243,10 +221,27 @@ header nav ul li a{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
+    padding: 150px 0px;
 }
 .video i{
-    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    right: 50%;
     padding: 10px;
     border-radius: 50%;
     color: var(--color-1);
 }
+.video i::after{
+    content: "";
+    background-color: #fff;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--color-1);
+}
+
