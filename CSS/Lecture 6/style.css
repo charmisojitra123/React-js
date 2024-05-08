@@ -1,0 +1,23 @@
+/* Flex Box */
+.parent{
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 20px 0px;
+}
+.box{
+    background-color: pink;
+    border: 1px solid red;
+    width: 100px;
+}
+
+/* Flex Grow */
+.grow{
+    flex-grow: 1;
+}
+
+/* Flex Shrink */
+.shrink{
+    flex-shrink: 1;
+}
