@@ -1,0 +1,56 @@
+/* Visibility */
+.visible{
+    visibility: hidden;
+}
+
+/* Outline */
+.outline{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    margin: 20px 0px;
+}
+.solid{
+    outline: 5px solid red;
+}
+.dotted{
+    outline: 5px dotted red;
+}
+.dashed{
+    outline: 5px dashed red;
+}
+.double{
+    outline: 5px double red;
+}
+.groove{
+    outline: 5px groove red;
+}
+.ridge{
+    outline: 5px ridge red;
+}
+.inset{
+    outline: 5px inset red;
+}
+.outset{
+    outline: 5px outset red;
+}
+
+/* Margin */
+.sec{
+    width: fit-content;
+    border: 3px solid;
+    margin: 20px 0px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+.margin{
+    margin: 30px;
+}
+
+/* Padding */
+.padding{
+    padding: 30px;
+}
