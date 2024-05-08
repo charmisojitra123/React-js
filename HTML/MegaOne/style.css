@@ -231,10 +231,9 @@ header nav ul li a{
     border-radius: 50%;
     color: var(--color-1);
 }
-.video i::after{
+/* .video i::after{
     content: "";
     background-color: #fff;
-
     position: absolute;
     left: 0%;
     right: 0%;
@@ -243,5 +242,5 @@ header nav ul li a{
     padding: 10px;
     border-radius: 50%;
     color: var(--color-1);
-}
+} */
 
