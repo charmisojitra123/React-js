@@ -1,7 +1,7 @@
 .parent{
-    max-width: 1500px;
+    max-width: 1200px;
     /* width: 1500px; */
-    height: 800px;
+    height: 700px;
     background-color: darkgray;
     display:flex;
     /* flex-wrap: wrap; */
