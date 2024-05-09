@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin: 50px 30px;
+    background-color: #242529;
+}
+p{
+    color: #fff;
+    font-weight: 900;
+    align-self: center;
+}
+.nav ul{
+    /* display: inline; */
+    display: flex;
+}
+.nav ul li{
+    color: #fff;
+    /* display: inline; */
+    /* align-self: center; */
+    padding: 6px 15px;
+    margin: 0px 5px;
+}
+.contact{
+    background-color: #1392a4;
+    border-radius: 20px;
+    /* padding: 5px 15px 6px !important; */
+}

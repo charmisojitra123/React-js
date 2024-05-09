@@ -1,7 +1,7 @@
 /* Flex Box */
 .parent{
     display: flex;
-    width: 1200px;
+    width: 1300px;
     height: 500px;
     border: 5px solid black;
     margin: 20px 0px;
@@ -9,7 +9,7 @@
 .box{
     background-color: pink;
     border: 1px solid red;
-    width: 100px;
+    width: 200px;
 }
 
 /* Flex Grow */
@@ -20,4 +20,36 @@
 /* Flex Shrink */
 .shrink{
     flex-shrink: 1;
+}
+.shrink1{
+    flex-shrink: 10;
+}
+/* .shrink2{
+    flex-shrink: 2;
+} */
+
+/* Flex Basis */
+.basis1{
+    flex-basis: 120px;
+}
+.basis2{
+    flex-basis: 120px;
+}
+.basis3{
+    flex-basis: 120px;
+}
+.basis4{
+    flex-basis: 120px;
+}
+.basis5{
+    flex-basis: 120px;
+}
+.basis6{
+    flex-basis: 120px;
+}
+.basis7{
+    flex-basis: 120px;
+}
+.basis8{
+    flex-basis: 120px;
 }
