@@ -1,0 +1,64 @@
+/* Order */
+.parent{
+    display: flex;
+}
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    order: 2;
+}
+.div2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    order: 4;
+}
+.div3{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    order: 1;
+}
+.div4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    order: 3;
+}
+
+.infobox1{
+    display: flex;
+    background-color: lightgreen;
+}
+.infobox2{
+    display: flex;
+    background-color: lightskyblue;
+}
+.img1{
+    order: 2;
+}
+.text1{
+    order: 1;
+}
+.img2{
+    order: 1;
+}
+.text2{
+    order: 2;
+}
+
+
+/* White Space */
+.box1{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    white-space: nowrap;
+}
+.box2{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    white-space: wrap;
+}
