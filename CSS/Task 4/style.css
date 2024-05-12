@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+/* Main Section */
+.testimonial_sec{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+/* Testimonial */
+.testimonial{
+    text-align: center;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: -1px 1px 20px 0px #c0baba;
+    transition: 0.5s;
+}
+.testimonial:hover{
+    transform: translateY(-10px);
+    box-shadow: -1px 1px 20px 0px #3d7bf0a1;
+    transition: 0.5s;
+}
+
+/* Testimonial Image */
+.testimonial .img{
+    background-color: #3d7bf0;
+    z-index: 9;
+    position: relative;
+    padding: 40px 0px;
+    border-radius: 30px 30px 0px 30px;
+}
+.testimonial .img::before{
+    content: "";
+    height: 50px;
+    width: 50px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #3d7bf0;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}
+.testimonial .img img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    outline: 3px solid #fff;
+    outline-offset: 6px;
+}
+
+/* Testimonial Info Box */
+.testimonial .info{
+    border-radius: 30px;
+    z-index: 9;
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+}
+.testimonial .info h2{
+    color: #000;
+    transition: 0.5s;
+}
+.testimonial:hover .info h2{
+    color: #3d7bf0;
+    transition: 0.5s;
+}
+.testimonial .info p{
+    padding: 10px 0px 20px 0px;
+    color: #787676;
+    line-height: 22px;
+}
+
+/* Testimonial Button */
+.testimonial .btn{
+    background-color: #3d7bf0;
+    color: #fff;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -1px 1px 20px 0px #fff;
+    transition: 0.5s;
+}
+.testimonial .btn:hover{
+    color: #3d7bf0;
+    background-color: #fff;
+    box-shadow: -1px 1px 20px 0px #3d7bf0a1;
+    cursor: pointer;
+    transition: 0.5s;
+}
