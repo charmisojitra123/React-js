@@ -14,9 +14,47 @@
 }
 
 /* Text Transform  */
+.capitalize{
+    text-transform: capitalize;
+}
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+
 /* Text Align  */
+.start{
+    text-align: start;
+}
+.center{
+    text-align: center;
+}
+.end{
+    text-align: end;
+}
+
 /* Text Decoration Line  */
+.underline{
+    text-decoration-line: underline;
+}
+.overline{
+    text-decoration-line: overline;
+}
+.linethrough{
+    text-decoration-line: line-through;
+}
+.none{
+    text-decoration-line: none;
+}
+
 /* Text Decoration Color */
+.linethrough{
+    text-decoration-color: red;
+}
+
 /* Text Shadow */
-
-
+.text_shadow{
+    text-shadow: 3px 3px 3px red;
+}
