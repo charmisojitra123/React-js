@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Background Clip */
+.clip{
+    background-color: pink;
+    height: 400px;
+    width: 500px;
+    margin: 30px auto;
+    border: 5px dashed purple;
+    padding: 50px;
+    background-clip: border-box;
+    background-clip: content-box;
+    background-clip: padding-box;
+}
+
+/* Min Width */
+.min_width{
+    min-width: 300px;
+    max-width: 700px;
+    height: 400px;
+    background-color: pink;
+    border: 5px dashed purple;
+    padding: 50px;
+    margin: 30px auto;
+}
+
+/* Listing Style */
+.listing{
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+    /* list-style-type: circle;
+    list-style-type: disc;
+    list-style-type: armenian;
+    list-style-type: decimal;
+    list-style-type: square; */
+    /* list-style-position: inside; */
+    /* list-style-position: outside; */
+    list-style-image: url('/CSS/image/file.jpg');
+}
