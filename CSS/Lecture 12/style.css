@@ -1,0 +1,23 @@
+div{
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+}
+.box1{
+    background-color: crimson;
+}
+.box2{
+    background-image: url('/CSS/image/tree-736885_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.box3{
+    background-image: url('/CSS/image/2.hero-white-flowers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+

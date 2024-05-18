@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Plain', sans-serif;
+}
+
+:root{
+    --primary-color: #f13a11;
+    --dark-color: #171819;
+}
+
+/* Section CSS */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* Paragraph CSS */ 
+.para{
+    color: #666262;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+/* Header CSS Start */
+.head_sec{
+    background-color: var(--dark-color);
+    padding: 16px;
+}
+/* Logo CSS Start */
+.logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+/* Logo CSS End */
+/* Navbar CSS Start */
+.navbar{
+    display: flex;
+    justify-content: space-between ;
+}
+.navbar .nav_div{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar nav{
+    margin-right: 30px;
+}
+.navbar nav a{
+    color: #fff;
+    text-decoration: none;  
+    font-size: 14px;
+    padding: 0px 20px; 
+    transition: 0.5s;
+}
+.navbar nav a:hover{
+    color: var(--primary-color); 
+    transition: 0.5s;
+}
+/* Navbar CSS End */
+/* Header Icon CSS Start */
+.header_icon{
+    color: #fff;
+    padding: 0px 12px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.header_icon_insta{
+    font-size: 20px;
+}
+.header_icon:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+/* Header Icon CSS End */
+/* Header CSS End */
+
+/* Banner CSS Start */
+.banner_sec{
+    background-image: url('image/hero-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+    position: relative;
+    color: #fff;
+}
+.banner_sec h1, .banner_sec h6, .banner_sec a{
+    position: relative;
+    z-index: 2;
+}
+.banner_sec h6{
+    color: #909090;
+    font-size: 22px;
+    font-weight: 500;
+}
+.banner_sec h1{
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin: 30px 0px 50px 0px;
+}
+.banner_sec::before{
+    content: "";
+    background-color: var(--dark-color);
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Banner Button CSS Start */
+.banner_btn1{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+.banner_btn1:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.banner_btn2{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: 1px solid var(--primary-color);
+    transition: 0.5s;
+}
+.banner_btn2:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+/* Banner Button CSS End */
+/* Banner CSS End */
+
+/* About Us CSS Start */
+.about_sec{
+    background-color: var(--dark-color);
+    padding: 80px 0px;
+}
+.about_sec h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.about_sec h6{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
