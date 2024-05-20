@@ -317,6 +317,27 @@
 /* Testimonial CSS End */
 
 
+/* Pricing CSS Start */
+.pricing{
+    padding: 112px 0px;
+}
+.pricing .subtitle{
+    color: #909090;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.pricing .title{
+    color: var(--dark-color);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -2px;
+    margin: 10px 0px;
+}
+/* Pricing CSS End */
+
+
 
 
 
