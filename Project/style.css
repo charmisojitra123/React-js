@@ -320,7 +320,7 @@
 
 
 
-/* @media (min-width: 1200px) {
+ @media (min-width: 1200px) {
    .container {
         max-width: 1025px;
     }
@@ -386,7 +386,7 @@ h6{
     transition-duration: .8s;
 }
 [data-aos^=fade][data-aos^=fade] {
-    /* opacity: 0; 
+    /* opacity: 0; */
     transition-property: opacity, transform;
 }
 .text-white{
@@ -419,7 +419,7 @@ h2{
     transition-duration: .8s;
 }
 [data-aos^=fade][data-aos^=fade] {
-    /* opacity: 0; 
+    /* opacity: 0; */
     transition-property: opacity, transform;
 }
 .py-5 {
@@ -435,7 +435,7 @@ h2{
     text-align: center;
     border: 0;
     border-bottom: 0;
-    /* text-transform: uppercase; 
+    text-transform: uppercase; 
 }
 
 .table-responsive {
@@ -498,4 +498,4 @@ td {
     background: #f13a11;
     border: 1px solid #212122;
     color: var(--white-color);
-} */
+} 

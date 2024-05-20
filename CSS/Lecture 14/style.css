@@ -1,0 +1,131 @@
+/* Translate Property */
+.translate, .rotate, .scale, .skew{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.inner_translatex{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.translatex:hover .inner_translatex{
+    transform: translateX(200px);
+    transition: 3s linear;
+}
+
+.inner_translatey{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.translatey:hover .inner_translatey{
+    transform: translateY(200px);
+    transition: 3s ease;
+}
+
+.inner_translatexy{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightcoral;
+}
+.translatexy:hover .inner_translatexy{
+    transform: translate(-200px,200px);
+    transition: 3s ease-in;
+}
+
+
+/* Rotate Property */
+.inner_rotatex{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+.rotatex:hover .inner_rotatex{
+    transform: rotateX(180deg);
+    transition: 3s ease-in-out;
+}
+
+.inner_rotatey{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+.rotatey:hover .inner_rotatey{
+    transform: rotateY(180deg);
+    transition: 3s ease-out;
+}
+
+.inner_rotatexy{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightblue;
+}
+.rotatexy:hover .inner_rotatexy{
+    transform: rotate(180deg);
+    transition: 3s linear;
+}
+
+
+/* Skew Property */
+.inner_skewx{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightsalmon;
+}
+.skewx:hover .inner_skewx{
+    transform: skewX(180deg);
+    transition: 3s ease-in-out;
+}
+
+.inner_skewy{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightsalmon;
+}
+.skewy:hover .inner_skewy{
+    transform: skewY(180deg);
+    transition: 3s ease-out;
+}
+
+.inner_skewxy{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightsalmon;
+}
+.skewxy:hover .inner_skewxy{
+    transform: skew(180deg);
+    transition: 3s linear;
+}
+
+
+/* Scale Property */
+.inner_scalein{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightgreen;
+}
+.scalein:hover .inner_scalein{
+    transform: scale(0.8);
+    transition: 3s ease;
+}
+.inner_scaleout{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightgreen;
+}
+.scaleout:hover .inner_scaleout{
+    transform: scale(1.3);
+    transition: 3s ease-in;
+}
