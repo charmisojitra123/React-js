@@ -13,6 +13,7 @@
 /* Section CSS */
 .container{
     width: 75%;
+    padding: 0px 15px;
     margin: auto;
 }
 
@@ -333,32 +334,72 @@
     font-weight: bold;
     text-align: center;
     letter-spacing: -2px;
-    margin: 10px 0px;
+    margin: 10px 0px 50px 0px;
+}
+.pricing .inner_pricing{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing .pricing_info {
+    margin: 0px 15px;
+}
+.pricing .pricing_info img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+}
+.pricing .pricing_info .pricing_inner_info{
+    background: #fff;
+    box-shadow: 6px 0 38px rgba(20, 20, 20, 0.10);
+    border-radius: 0 0 2px 2px;
+    padding: 16px 32px;
+    position: relative;
+}
+.pricing .pricing_info .pricing_inner_info h3{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.pricing .pricing_info .pricing_inner_info strong{
+    color: #909090;
+}
+.pricing .pricing_info .pricing_inner_info .price{
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+}
+.pricing .pricing_info .pricing_inner_info p{
+    color: #666262;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 16px 0px;
 }
 /* Pricing CSS End */
 
-
-
-
-
- @media (min-width: 1200px) {
-   .container {
-        max-width: 1025px;
-    }
-}
-
+/* Time Table Section Start */
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.container{
+/* .container{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 .schedule{
     background-color: #171819;  
@@ -452,7 +493,7 @@ h2{
 }
 
 .schedule-table{
-    display: block;
+    /* display: block; */
     text-align: center;
     border: 0;
     border-bottom: 0;
@@ -475,7 +516,12 @@ table{
     border-spacing: 2px;
 }
 
-.table, .thead-light th{
+.table{
+    color: #fff;
+    border: 1px solid black
+}
+
+.thead-light th{
     background: #f13a11;
     color: #fff;
     border: 1px solid black
@@ -520,3 +566,79 @@ td {
     border: 1px solid #212122;
     color: var(--white-color);
 } 
+/* Time Table Section End */
+
+/* Form Section Start */
+.form_sec{
+    padding: 112px 0px;
+}
+.form_sec .form_title,
+.map_sec .map_title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: -2px;
+}
+.form_sec .form input{height: calc(2.25rem + 20px);}
+.form_sec .form input, .form_sec .form textarea{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+}
+.form_sec .form .form_btn{
+    background-color: var(--dark-color);
+    color: white;
+    border: 1px solid var(--dark-color);
+    transition: 0.5s;
+}
+.form_sec .form .form_btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* Form Section End  */
+
+/* Map Section Start  */
+.map_sec{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #efebeb;
+}
+.map_sec .para{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.map_sec .para i{
+    color: var(--primary-color);
+}
+/* Map Section End  */
+
+/* Footer Section Start  */
+.footer{
+    padding: 50px 0px;
+}
+.inner_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_contact{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_contact p.para{
+    margin-right: 35px;
+} 
+.footer_contact .para i{
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+/* Footer Section End  */
