@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family:'Plain', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -11,6 +12,8 @@
 }
 
 /* Section CSS */
+
+
 .container{
     width: 75%;
     padding: 0px 15px;
@@ -73,6 +76,10 @@
     color: var(--primary-color); 
     transition: 0.5s;
 }
+.navbar nav a:active{
+    color: var(--primary-color); 
+    transition: 0.5s;
+}
 /* Navbar CSS End */
 
 /* Header Icon CSS Start */
@@ -95,11 +102,10 @@
 /* Banner CSS Start */
 .banner_sec{
     background-image: url('image/hero-bg.jpg');
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 200px 0;
+    padding: 250px 0;
     position: relative;
     color: #fff;
 }
@@ -429,28 +435,19 @@ section{
     padding-right: 15px;
 }
 
+.table{
+    width: 100%;
+    margin: auto;
+}
+
 h6{
     color: #909090;
     font-size: 22px;
     line-height: inherit;
     margin: 0;
+    margin-bottom: 20px;
 }
 
-[data-aos^=fade][data-aos^=fade].aos-animate {
-    opacity: 1;
-    transform: translateZ(0);
-}
-
-[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
-    transition-timing-function: ease;
-}
-[data-aos][data-aos][data-aos-duration="800"], body[data-aos-duration="800"] [data-aos] {
-    transition-duration: .8s;
-}
-[data-aos^=fade][data-aos^=fade] {
-    /* opacity: 0; */
-    transition-property: opacity, transform;
-}
 .text-white{
     color: #fff !important;
 }
@@ -463,27 +460,6 @@ h2{
     line-height: normal;
 }
 
-
-[data-aos][data-aos][data-aos-delay="200"].aos-animate, body[data-aos-delay="200"] [data-aos].aos-animate {
-    transition-delay: .2s;
-}
-[data-aos^=fade][data-aos^=fade].aos-animate {
-    opacity: 1;
-    transform: translateZ(0);
-}
-[data-aos][data-aos][data-aos-delay="200"], body[data-aos-delay="200"] [data-aos] {
-    transition-delay: 0;
-}
-[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
-    transition-timing-function: ease;
-}
-[data-aos][data-aos][data-aos-duration="800"], body[data-aos-duration="800"] [data-aos] {
-    transition-duration: .8s;
-}
-[data-aos^=fade][data-aos^=fade] {
-    /* opacity: 0; */
-    transition-property: opacity, transform;
-}
 .py-5 {
     padding-top: 3rem !important;
 }
@@ -506,7 +482,7 @@ h2{
 }
 
 .table{
-    margin-bottom: 1rem;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -514,11 +490,6 @@ table{
     border-collapse: collapse;
     text-indent: initial;
     border-spacing: 2px;
-}
-
-.table{
-    color: #fff;
-    border: 1px solid black
 }
 
 .thead-light th{
