@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    color1: '#000000',
+                }
+                }
+            }
+            }
+        </script>
+    </head>
+    <body>
+
+        <h1 class="text-3xl font-bold underline text-center text-blue-300 bg-color1 p-5">
+            Hello world!
+        </h1>
+        <div class="flex justify-evenly mt-10 h-screen bg-sky-200">
+            <button class="bg-green-600 text-white px-5 py-2 hover:bg-yellow-500 rounded self-center">Click Me</button>
+            <button class="bg-yellow-500 text-white px-5 py-2 hover:bg-red-600 rounded-md self-center">Click Me</button>
+            <button class="bg-red-600 text-white px-5 py-2 hover:bg-purple-800 rounded-xl self-center">Click Me</button>
+            <button class="bg-purple-800 text-white px-5 py-2 hover:bg-green-600 rounded-2xl self-center">Click Me</button>
+        </div>
+        
+    </body>
+    </html>
