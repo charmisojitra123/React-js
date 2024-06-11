@@ -8,10 +8,16 @@
 </head>
 <body>
 
-    <section class="h-screen flex flex-col justify-center items-center demo10-bg-image bg-black">
-        <div class="text-white text-4xl font-extrabold">Welcome to Our Awesome Website</div>
-        <div class="my-5 text-white text-sm">Discover amazing features and services that await you.</div>
-        <button class="bg-yellow-400 text-black py-2 px-5 rounded-3xl font-medium text-sm">Get Started</button>
+    <section class="h-screen relative">
+        <div class="absolute inset-0">
+            <img src="../assets/demo10_bg_img.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 h-full flex flex-col justify-center items-center">
+            <div class="text-white text-4xl font-extrabold">Welcome to Our Awesome Website</div>
+            <div class="my-5 text-white text-sm">Discover amazing features and services that await you.</div>
+            <button class="bg-yellow-400 text-black py-2 px-5 rounded-3xl font-medium text-sm">Get Started</button>
+        </div>
     </section>
     
 </body>
