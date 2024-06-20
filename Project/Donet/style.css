@@ -387,6 +387,84 @@
 }
 /* Call To Action Section CSS End */
 
+/* Feature Product Section CSS Start */
+.feature_product_sec{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3;
+    width: 95%;
+    margin: auto;
+    padding: 60px 0px;
+}
+.feature_product_sec .featured,
+.feature_product_sec .rated,
+.feature_product_sec .sale{
+    margin: 0px 20px;
+}
+.feature_product_sec .featured .hr,
+.feature_product_sec .rated .hr,
+.feature_product_sec .sale .hr{
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+.feature_product_sec .featured hr,
+.feature_product_sec .rated hr,
+.feature_product_sec .sale hr{
+    opacity: 0.4;
+}
+.feature_product_sec .heading{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.feature_product_sec .inner_product_sec{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+.feature_product_sec .inner_product_sec img{
+    width: 130px;
+    height: 130px;
+    border: 2px solid #e8e7e7;
+}
+.feature_product_sec .inner_product_sec:hover .img1,
+.feature_product_sec .inner_product_sec .img2{
+    display: none;
+    transition: 0.5s;
+}
+.feature_product_sec .inner_product_sec:hover .img2{
+    display: block;
+    transition: 0.5s;
+}
+.feature_product_sec .inner_product_sec .product_info{
+    margin-left: 30px;    
+}
+.feature_product_sec .inner_product_sec .product_info h4{
+    font-weight: 500;
+    color: #000;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.feature_product_sec .inner_product_sec .product_info h4:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.feature_product_sec .inner_product_sec .product_price{
+    font-size: 17px;
+    margin-top: 6px;
+    font-weight: 600;
+}
+.feature_product_sec img.related_img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border: 0;
+}
+/* Feature Product Section CSS End */
+
+/* Newsletter Section CSS Start */
 .newsletter_sec{
     background-image: url('images/asset\ 50.jpeg');
     background-position: center;
@@ -444,8 +522,7 @@
     font-weight: 600;
     border: 0;
 }
-
-
+/* Newsletter Section CSS End */
  
 
 
@@ -501,7 +578,22 @@
     .cta_sec .cta_info a{
         font-size: 15px;
     }
-    
+    .newsletter_sec .newsletter_inner_sec{
+        width: 95%;
+        margin: auto;
+        display: block;
+    }
+    .newsletter_sec .newsletter_inner_sec .newsletter_form input{
+        padding: 16px 20px;
+    }
+    .newsletter_sec .newsletter_inner_sec .newsletter_info{
+        margin-bottom: 30px;
+    }
+    .feature_product_sec{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 40px 0px;
+    }
 }
 
 
@@ -533,5 +625,16 @@
     }
     .cta_sec{
         display: block;
+    }
+    .newsletter_sec{
+        padding: 50px 0px;
+    }
+    .newsletter_sec .newsletter_inner_sec .newsletter_info{
+        margin-bottom: 20px;
+    }
+    .feature_product_sec{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px 0px;
     }
 }
