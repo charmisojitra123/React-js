@@ -35,6 +35,15 @@
 
 
 /* Header Section CSS Start */
+.head_sec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 2px 5px -2px #0000001a;
+}
 .header{
     width: 95%;
     margin: auto;
@@ -45,6 +54,7 @@
 .header .logo, .header .nav_link, .header .icon{
     align-self: center;
 }
+.footer .logo img,
 .header .logo img{
     max-width: 200px;
 }
@@ -523,6 +533,83 @@
     border: 0;
 }
 /* Newsletter Section CSS End */
+
+/* Footer Section CSS Start */
+.footer_sec{
+    width: 95%;
+    margin: auto;
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.footer .footer_info{
+    font-size: 14px;
+    color: #111111;
+    line-height: 22px;
+    margin: 20px;
+}
+.footer .footer_icon{
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #111111;
+    transition: 0.5s;
+}
+.footer .footer_icon:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer_list{
+    margin-left: 20px;
+}
+.footer_list .footer_link_title{
+    position: relative;
+    margin-bottom: 50px;
+}
+.footer_list .footer_link_title::before{
+    content: "";
+    height: 1px;
+    width: 35px;
+    background-color: #111111;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    display: block;
+}
+.footer_list ul li{
+    margin: 15px 0px;
+}
+.footer_list ul li a{
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.footer_list ul li a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* Footer Section CSS End */
+
+/* Copy Right Section CSS Start */
+.copyright_sec{
+    border-top: 1px solid #e8e8e8;
+    padding: 25px 0;
+}
+.copyright_sec .copyright_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.copyright_sec .copyright_info p{
+    font-size: 14px;
+}
+
+/* Copy Right Section CSS End */
+
  
 
 
@@ -594,6 +681,10 @@
         grid-template-columns: auto auto;
         padding: 40px 0px;
     }
+    .footer_sec{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 
@@ -636,5 +727,17 @@
         display: grid;
         grid-template-columns: auto;
         padding: 20px 0px;
+    }
+    .footer_sec{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .copyright_sec .copyright_info{
+        display: block;
+        text-align: center;
+    }
+    .copyright_sec .copyright_info p{
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 }
