@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwindcss Project</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-black text-white">
+<body class="bg-[rgb(17,17,17)] text-white">
 
-    <section class="flex justify-between h-screen w-[95%] m-auto relative">
-        <div class="before:content-[''] before:bg-yellow-400 before:origin-bottom -rotate-12 before:z-10 before:absolute before:left-[-10%] before:w-[20%] before:h-full rounded-3xl flex items-center">
-            <img src="../assets/dark.jpg" alt="" class="w-full h-3/4 m-auto rounded-3xl self-center relative z-20">
+    <!-- Setting Icon Start -->
+    <div class="fixed top-[200px] left-0 bg-white px-5 py-3 text-black text-2xl rounded-r-md z-30 ">
+        <i class="fa-solid fa-gear bg-white text-black text-2xl rounded-r-md z-50 animate-spin"></i>
+    </div>
+    <!-- Setting Icon End -->
+
+    <!-- Menu Icon Start -->
+     <div class="fixed top-8 right-8 z-50">
+        <i class="fa-solid fa-gear bg-[rgb(43,42,42)] text-white text-xl p-4 rounded-full duration-300 hover:bg-yellow-500"></i>
+     </div>
+    <!-- Menu Icon End -->
+
+    <!-- Home Section Start -->
+    <div class="relative flex h-svh w-[95%] m-auto before:content-[''] before:bg-yellow-500 before:absolute before:w-[400px] before:h-full before:skew-x-[15deg] before:-left-36" >
+        <img src="../assets/portrait.jpeg" alt="" class=" h-[calc(100vh-80px)] ml-3 my-auto rounded-3xl z-20">
+        <div class="self-center w-[40%] m-auto">
+            <h1 class="flex items-center text-yellow-500 text-5xl font-bold"><p class="h-1 w-11 bg-yellow-500 mr-6 text-5xl"></p>I'M CHARMI SOJITRA. <br></h1>
+            <p class="ml-16 text-5xl font-bold mt-3">WEB DESIGNER</p>
+            <p class="leading-9 text-lg my-6">I'm a Charmi Sojitra web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
+            <button class="border-2 border-yellow-500 rounded-full pl-8 font-bold text-sm relative z-50 duration-500 overflow-hidden before:content[''] before:absolute before:bg-yellow-500 before:h-full before:w-0 before:right-0 before:rounded-full before:z-[-1] before:duration-500 hover:before:w-full hover:before:duration-500">MORE ABOUT ME<i class="fa-solid fa-arrow-right bg-yellow-500 rounded-full p-4 ml-4 text-xl font-extrabold relative z-50"></i></button>
         </div>
-        <div>
-            <h1 class="flex items-center"><p class="h-1 w-11 bg-yellow-400 mr-5"></p>I'M STEVE MILNER.WEB DESIGNER</h1>
-        </div>
-    </section>
+    </div>
+    <!-- Home Section End -->
     
 </body>
 </html>
