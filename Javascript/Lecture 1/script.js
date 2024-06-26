@@ -7,10 +7,10 @@ console.warn("Helloo Warningg !!");
 // Document Write
 document.write("Helloo HTML");
 
-// Document Get By ID
+// DOM (Document Get By ID)
 document.getElementById('demo').innerHTML = "Hello, Good Morning";
 
-// Alert
+// Pop Up (Alert)
 // alert("Hello, I am alert !!");
 
 //ES5 var Variable (Global Variable)
