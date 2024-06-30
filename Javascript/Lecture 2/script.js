@@ -69,3 +69,53 @@ console.log(typeof str3);
 
 let str4 = `Hello World, ${str}`;
 console.log(str4);
+
+// Type Of Datatype
+{
+    let a = 10;
+    console.log(a);
+    console.log(typeof a);
+    
+    let b = '10';
+    console.log(b);
+    console.log(typeof b);
+
+    let c = 'Javascript';
+    console.log(c);
+    console.log(typeof c);
+
+    let d = true;
+    console.log(d);
+    console.log(typeof d);
+}
+
+// Undefine Null and NAN
+{
+    let a;
+    console.log(a);
+
+    console.log(undefined)
+
+    let x = undefined
+    let y = null == undefined;
+    console.log(y);
+    console.log(typeof x);
+    console.log(typeof y);
+
+    y = null === undefined;
+    console.log(y);
+}
+{
+    let a = 10;
+    let b = 20;
+    let c = "Integer"
+
+    console.log(a + b);
+    console.log(a + b + c);
+    console.log(a * b);
+    console.log(a * b + c);
+    console.log(a * b * c);
+    console.log(c + b + a);
+    console.log(c * b + a);
+
+}
