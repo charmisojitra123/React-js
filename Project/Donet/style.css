@@ -192,6 +192,9 @@
     margin: 15px; 
     position: relative;
 }
+.service_img img{
+    object-fit: cover;
+}
 .service_img::before{
     content: "\f04b";
     background-color: #fff;
@@ -644,6 +647,9 @@
     .service_sec1, .service_sec2{
         overflow: hidden;
         display: block;
+    }
+    .service_img{
+        overflow: hidden;
     }
     .service_info_sec1, .service_info_sec2{
         padding: 50px 30px;
