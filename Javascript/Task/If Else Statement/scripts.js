@@ -76,36 +76,36 @@
 
 // Sort three numbers
 {
-//   console.log("Sort Three numbers");
+  console.log("Sort Three numbers");
 
-//   let x = 31;
-//   let y = 11;
-//   let z = 14;
+  let x = 31;
+  let y = 11;
+  let z = 14;
 
-//   if(x < y && x < z){
-//     if(y < z){
-//         console.log(`${x} ${y} ${z}`);
-//     }
-//     else{
-//         console.log(`${x} ${z} ${y}`);
-//     }
-//   }
-//   else if(y < x && y < z){
-//     if(x < z){
-//         console.log(`${y} ${x} ${z}`);
-//     }
-//     else{
-//         console.log(`${y} ${z} ${x}`);
-//     }
-//   }
-//   else{
-//     if(y < x){
-//         console.log(`${z} ${y} ${x}`);
-//     }
-//     else{
-//         console.log(`${z} ${x} ${y}`);
-//     }
-//   }
+  if(x < y && x < z){
+    if(y < z){
+        console.log(`${x} ${y} ${z}`);
+    }
+    else{
+        console.log(`${x} ${z} ${y}`);
+    }
+  }
+  else if(y < x && y < z){
+    if(x < z){
+        console.log(`${y} ${x} ${z}`);
+    }
+    else{
+        console.log(`${y} ${z} ${x}`);
+    }
+  }
+  else{
+    if(y < x){
+        console.log(`${z} ${y} ${x}`);
+    }
+    else{
+        console.log(`${z} ${x} ${y}`);
+    }
+  }
 }
 
 // JAVASCRIPT LOGICAL PROGRAM
