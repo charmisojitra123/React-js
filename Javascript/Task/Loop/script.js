@@ -56,6 +56,15 @@
 /* Reverses a given string */
 {
     // console.log("Reverses String");
+
+    // let str = prompt("Enter the string");
+    // console.log(str);
+
+    // let reverse = "";
+    // for(let i = str.length; i > 0; i--){
+    //     reverse += str[i - 1];
+    // }
+    // console.log(reverse);
 }
 
 /* Sum of all elements in an array */
@@ -104,6 +113,14 @@
     console.log("Vowels in a String");
 
     let str = prompt("Enter the string");
+    let vowels = ["a", "e", "i", "o", "u"];
     console.log(str);
     
+    let count = 0;
+    for(let i = 0; i < str.length; i++){
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U'){
+            count += 1;
+        }
+    }
+    console.log(count);
 }
