@@ -1,26 +1,81 @@
 // If else Statement
 
-// The if...else statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.
+/* Icecream Production */
 
-if (condition)
-    statement1
+{
+  let RawMaterial = "Milk";
+  let Storage = false;
+  let Production = true;
+  let Blending = true;
+  let Pasteurization = true;
+  let Flavor = "chocolate";
+  let Freezing = true;
+
+  // if (RawMaterial == "Milk") {
+  //   console.log("Icecream is ready for production !!");
+  // }
+  // else{
+  //   console.log("Production Off !!");
+  // }
+
+  // if (RawMaterial == "Milk") {
+  //   console.log("Icecream is ready for production !!");
+  // }
+  // else if(Production == true){
+  //   console.log("Icecream Production has been started !!");
+  // }
+  // else if(Blending == true){
+  //   console.log("Icecream Production Blending has been started !!");
+  // }
+  // else if(Pasteurization == true){
+  //   console.log("Icecream Production Pasteurization has been started !!");
+  // }
+  // else if(Flavor == "mango"){
+  //   console.log("Icecream Production Mango flavor has been started !!");
+  // }
+  // else if(Freezing == true){
+  //   console.log("Icecream Production Mango Freezing mode has been started !!");
+  // }
+
+
+  /* This triangular shape code is known as call back */
+  // if (RawMaterial == "Milk") {
+  //   console.log("Icecream is ready for production !!");
+  //   if (Production == true) {
+  //     console.log("Icecream Production has been started !!");
+  //     if (Blending == true) {
+  //       console.log("Icecream Production Blending has been started !!");
+  //       if (Pasteurization == true) {
+  //         console.log("Icecream Production Pasteurization has been started !!");
+  //         if (Flavor == "chocolate") {
+  //           console.log("Icecream Production Mango flavor has been started !!");
+  //           if (Freezing == true) {
+  //             console.log("Icecream Production Mango Freezing mode has been started !!");
+  //           }
+  //         } 
+  //       } 
+  //     } 
+  //   } 
+  // } 
+
+
+  /* Switch case Statement */
+  {
+    let subject = "science";
+
+    switch(subject){
+      case "maths": console.log("Math Book");
+      break;
+      case "chemistry": console.log("Chemistry Book");
+      break;
+      case "history": console.log("History Book");
+      break;
+      case "english": console.log("English Book");
+      break;
+      case "physics": console.log("Physics Book");
+      break;
+      default: console.log("No match Book");
+    }
+  }
   
-  // With an else clause
-  if (condition)
-    statement1
-  else
-    statement2
-
-// condition
-// An expression that is considered to be either truthy or falsy.
-
-// statement1
-// Statement that is executed if condition is truthy. Can be any statement, including further nested if statements. To execute multiple statements, use a block statement ({ /* ... */ }) to group those statements. To execute no statements, use an empty statement.
-
-// statement2
-// Statement that is executed if condition is falsy and the else clause exists. Can be any statement, including block statements and further nested if statements.
-
-    
-
-
-
+}
