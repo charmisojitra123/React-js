@@ -77,5 +77,37 @@
       default: console.log("No match Book");
     }
   }
+
+
+
+  {
+    let subject = "physics";
+
+    switch(subject){
+      case "maths": () => {
+        return console.log("Math Book");
+      }
+      
+      case "chemistry": () => {
+        return console.log("Chemistry Book");
+      }
+      
+      case "history": () => {
+        return console.log("History Book");
+      }
+      
+      case "english": () => {
+        return console.log("English Book");
+      }
+      
+      case "physics": () => {
+        return console.log("Physics Book");
+      }
+      
+      default: () => {
+        return console.log("No match Book");
+      }
+    }
+  }
   
 }
