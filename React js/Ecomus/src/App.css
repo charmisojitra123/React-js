@@ -1,0 +1,241 @@
+*{
+    font-family: "Albert Sans", sans-serif;
+}
+
+:root{
+    --primary-color: #93f859;
+}
+
+/* Container CSS */
+.containerSection{
+    padding: 0px 50px;
+}
+
+/* Button CSS */
+.btn{
+    border-radius:40px;
+    padding: 10px 25px;
+    font-size:15px;
+    position: relative;
+    overflow:hidden;
+    width: fit-content;
+    display:flex;
+    align-items: center;
+}
+.btn::after{
+    left: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: skew(-20deg);
+    width: 200%;
+    transition: 0.8s;
+}
+.btn:hover::after{
+    left: -150%;
+    transition: 0.8s;
+}
+
+/* Button Dark CSS */
+.btnDark{
+    background: black;
+    color: white;
+}
+.btnDark::after{
+    content:"";
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+}
+
+/* Button Light CSS */
+.btnLight{
+    background: var(--primary-color);
+}
+.btnLight::after{
+    content:"";
+    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.30), transparent);
+}
+
+/* Title */
+.title{
+    font-size: 42px;
+    font-weight: semi-bold;
+    line-height: 50px;
+}
+
+/* Inner Banner Section */
+.innerBannerSection{
+    background-image: linear-gradient(90deg, #ffffff00, #ffb9b942, #ffffff00);
+}
+
+/* Slider Banner */
+.bannerSlider .slick-dots{
+    bottom:60px !important;
+}
+.bannerSlider .slick-dots li button{
+    width: 22px !important;
+    height: 22px !important;
+}
+.bannerSlider .slick-dots li button::before{
+    opacity: 1 !important;
+    border-radius:50%;
+    width: 22px !important;
+    height: 22px !important;
+    line-height: 24px !important;
+}
+.bannerSlider .slick-dots li.slick-active button{
+    background: rgba(0,0,0,0.16) !important;
+    border-radius:50%;
+}
+
+
+/* Shop By Category */
+.shopCategory .slick-dots{
+    top: -70px;
+    text-align: right;
+    z-index:0;
+}
+.shopCategory .slick-list{
+    z-index:2
+}
+.shopCategory .slick-dots li.slick-active button,
+.shopCategory .slick-dots li.slick-active button:hover,
+.shopCategory .slick-dots li button:hover  {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.shopCategory .slick-dots li.slick-active button:before,
+.shopCategory .slick-dots li button:hover:before{
+    opacity: 1 !important;
+    font-size:6px;
+    line-height: 22px;
+}
+.shopCategory .slick-dots li button:before{
+    font-size:8px;
+}
+.shopCategoryBtn,
+.shopCategoryBtn:hover{
+    transition:0.5s;
+}
+.shopCategoryBtn .shopCategoryBtnIcon{
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: right;
+    width: 0; 
+}
+.shopCategoryBtn:hover .shopCategoryBtnIcon{
+    transform: scale(1);
+    width: fit-content;
+    margin-inline-start: 8px;
+}
+.shopCategory .shopCategoryInfo .shopCategoryImg{
+    transition: all 2.5s ease;
+}
+.shopCategory .shopCategoryInfo:hover .shopCategoryImg{
+    transform:scale(1.1);
+}
+
+
+/* Scroll Section */
+.scrollSection{
+    background-color: var(--primary-color);
+    animation: rightToLeft 10000ms linear infinite;
+}
+
+
+/* Two Product Section */
+.twoProduct .twoProductImg{
+    transition: all 2.5s ease;
+}
+.twoProduct:hover .twoProductImg{
+    transform:scale(1.1);
+}
+
+
+/* Discount Counter Section */
+.discoutCounter .discoutCounterImg{
+    position:relative;
+    overflow:hidden;
+    transition:0.5s;
+}
+.discoutCounter .discoutCounterImg::before{
+    content: "";
+    background:rgba(0,0,0,0.15);
+    height:0;
+    width:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.3s;
+}
+.discoutCounter .discoutCounterImg::after{
+    content: "";
+    background:rgba(0,0,0,0.15);
+    height:0;
+    width:50%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    transition:0.3s;
+}
+.discoutCounter .discoutCounterImg:hover::before{
+    height:100%;
+    transition:0.3s;
+}
+.discoutCounter .discoutCounterImg:hover::after{
+   height:100%;
+    transition-delay:0.3s;
+}
+
+
+
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+    /* Container CSS */
+    .containerSection{
+        padding: 0px 30px;
+    }
+
+    /* Button CSS */
+    .btnDark{
+        font-size:12px;
+    }
+
+    /* Slider Banner */
+    .bannerSlider .slick-dots{
+        bottom:30px !important;
+    }
+
+    /* Title */
+    .title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Container CSS */
+    .containerSection{
+        padding: 0px 10px;
+    }
+    /* Title */
+    .title{
+        font-size: 24px;
+    }
+    /* Shop By Category */
+    .shopCategory .slick-dots{
+        top:100%;
+        text-align: center;
+    }
+}
+
+
+/* Animation CSS  */
+@keyframes rightToLeft{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+ 

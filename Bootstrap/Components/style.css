@@ -1,0 +1,204 @@
+/* Accordion */
+.accordion-button:not(.collapsed) {
+    background-color: #e6c3f1 !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-button::after{
+    content: "\2b" !important;
+    background-image: none !important;
+    position: relative;
+    top: -8px;
+    font-size: 25px;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(135deg) !important;
+    top: 8px;
+}
+
+
+/* Alert */
+.alert-success {
+    background: #ffdcdc !important;
+    border: 2px solid red !important;
+}
+.alert-dismissible .btn-close {
+    box-shadow: none !important;
+}
+
+
+/* Breadcrums */
+.breadcrumb{
+    background: #00a4001a !important; 
+    width: fit-content;
+}
+
+
+/* Buttons */
+.btn_sec {
+    background-color: #f0f0f0;
+}
+
+
+/* Carousel */
+.carousel_btn1{
+    background:#c38f74 !important;
+    border: 2px solid #c38f74 !important;
+}
+.carousel_btn1{
+    background:#f1aa86 !important;
+    border: 2px solid #c38f74 !important;
+}
+.carousel_btn2:hover,
+.carousel_btn1:hover{
+    background:transparent !important;
+    color: #fff !important;
+}
+.carousel-control-prev-icon,
+.slide2{
+    position: relative;
+}
+.slide2::before{
+    content:"";
+    height:100%;
+    width:100%;
+    position: absolute;
+    top :0;
+    left: 0;
+    background: #000;
+    opacity: 0.6;
+}
+.carousel-indicators [data-bs-target] {
+    background-color:#c38f74 !important;
+    opacity: 0.3 !important;
+}
+.carousel-indicators .active{
+    background-color:#ffb188 !important;
+    opacity: 1 !important;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background:none !important;
+    opacity: 0.3 !important;
+}
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover{
+    opacity: 1 !important;
+}
+.carousel_icon {
+    color: #fff;
+    position: relative;
+    padding: 25px;
+    line-height: 50px !important;
+}
+.carousel_icon::before{
+    content:"";
+    height:100%;
+    width:100%;
+    position: absolute;
+    top :0;
+    left: 0;
+    background-color:#ffb188 !important;
+    border-radius: 50%;
+}
+
+
+/* Close Button */
+.btn-close{
+    position: relative;
+    background: red !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 5px 10px !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+
+/* Collapse */
+.collapse .card-body{
+    background-color: #e6c3f191 !important;
+    border: 2px solid #a64cc1 !important;
+    color: #750597 !important;
+}
+.btn-collapse{
+    background-color: #a64cc1 !important;
+    color: #fff !important;     
+}
+
+
+/* Dropdown */
+.dropdown_sec .dropdown-toggle{
+    background: #3ebe98 !important;
+}
+.dropdown_sec .dropdown-menu{
+    background: #dbffeb !important;
+}
+
+
+/* Navbar */
+.navbar_sec .navbar{
+    background-color: #e4d9f3;
+}
+.navbar_sec .dropdown-menu .dropdown-item{
+    background: transparent !important;
+}
+.navbar_sec .dropdown-menu .dropdown-item:hover,
+.navbar_sec .nav-item .nav-link.active,
+.navbar_sec .nav-item .nav-link:hover{
+    color: #7c5da8 !important;
+}
+.navbar_sec .dropdown-menu[data-bs-popper] {
+    top: 125% !important;
+}
+.navbar_sec form .form-control {
+    border-color: #fff !important;
+    border-width: 2px;
+}
+.navbar_sec form .form-control:focus {
+    border-color: #7c5da8 !important;
+    box-shadow: none !important;
+}
+.navbar_sec .btn{
+    background: #7c5da8 !important;
+    color: #fff;
+    position: relative;
+    overflow:hidden;
+    padding-right: 24px !important;
+}
+.navbar_sec .btn:hover{
+    background: #7c5da8 !important;
+    color: #fff;
+}
+.navbar_sec .btn:after {
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    content: "";
+    left: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: skew(-20deg);
+    width: 150%;
+    transition: 0.8s;
+}
+.navbar_sec .btn:hover:after{
+    left: -150%;
+    transition: 0.8s;
+}
+
+
+/* Pagination */
+.pagination .page-item .page-link{
+    border-radius: 5px !important;
+    background: transparent;
+    color: #ff00b5;
+    border:2px solid #ff00b5;
+    transition:0.5s;
+}
+.pagination .page-item .page-link.active,
+.pagination .page-item .page-link:hover{
+    background:#ff00b5;
+    color: #fff;
+    transition:0.5s;
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .heading{
+        @apply text-center p-4 bg-fuchsia-900 text-white font-black text-2xl
+    }
+}
+
+.active{
+    color: #701a75;
+    text-decoration: underline;
+    font-weight: bold;
+  }
