@@ -3,6 +3,7 @@ import AboutUsBanner from '../components/AboutUsBanner'
 import AboutInfo from '../components/AboutInfo'
 import OurPriority from '../components/OurPriority'
 import AboutShopGram from '../components/AboutShopGram'
+import FooterWhite from '../components/FooterWhite'
 
 const AboutUs = () => {
   return (
@@ -18,6 +19,9 @@ const AboutUs = () => {
 
       {/* Shop Gram */}
       <AboutShopGram />
+
+      {/* Footer Section */}
+      <FooterWhite />
       
     </div>
   )
