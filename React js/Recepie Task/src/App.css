@@ -1,0 +1,25 @@
+/* Button CSS */
+.btnDark{
+    padding: 10px 25px;
+    font-size:15px;
+    position: relative;
+    overflow:hidden;
+    width: fit-content;
+    background: black;
+    color: white;
+}
+.btnDark::after{
+    content:"";
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.30), transparent);
+    left: 120%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: skew(-20deg);
+    width: 200%;
+    transition: 0.8s;
+}
+.btnDark:hover::after{
+    left: -150%;
+    transition: 0.8s;
+}

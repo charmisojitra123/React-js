@@ -5,7 +5,7 @@ const DiscountCounter = () => {
     
   return (
     <div className='containerSection discoutCounter grid grid-cols-1 lg:grid-cols-2 content-center overflow-hidden rounded-lg my-10'>
-        <div className='discoutCounterImg'>
+        <div className='imgHover'>
             <img src={img} alt="" className='rounded-t-lg lg:rounded-t-none lg:rounded-l-lg rounded-l-none h-full w-full object-cover' />
         </div>
         <div className='bg-[var(--primary-color)] flex'>
