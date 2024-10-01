@@ -7,10 +7,12 @@ import { GoArrowUpRight } from "react-icons/go";
 import InnerBanner from '../helpers/InnerBanner'
 import FaqAccordian from '../helpers/FaqAccordian'
 import { NavLink} from 'react-router-dom';
+import FooterWhite from '../components/FooterWhite';
 
 const Faq = () => {
   return (
     <div>
+      {/* Inner Banner Section */}
       <InnerBanner innerBannerTile="FAQ" innerBannerBreadcrumbs = "FAQ"/>
       
       <div className='containerSection block lg:flex gap-5 py-10'>
@@ -53,6 +55,8 @@ const Faq = () => {
         </div>
       </div>
 
+      {/* Footer */}
+      <FooterWhite/>
 
     </div>
 

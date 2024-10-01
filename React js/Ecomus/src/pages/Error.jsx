@@ -2,6 +2,7 @@ import React from 'react'
 import { FaHome } from "react-icons/fa";
 import { PiSmileySadBold } from "react-icons/pi";
 import { NavLink} from 'react-router-dom';
+import FooterWhite from '../components/FooterWhite';
 
 
 const Error = () => {
@@ -12,7 +13,11 @@ const Error = () => {
        </div>
        <p className='text-3xl my-10'>We Couldn't Find This Page !!!</p>
        <button className="btn btnDark mx-auto"><NavLink to="/">Back To Home</NavLink><FaHome className="ms-2" /></button>
-    </div>
+
+      {/* Footer */}
+      <FooterWhite/>
+    
+  </div>
   )
 }
 

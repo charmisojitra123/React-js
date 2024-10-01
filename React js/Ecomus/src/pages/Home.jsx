@@ -5,6 +5,8 @@ import ShopByCategory from "../components/ShopByCategory";
 import BestDeal from "../components/BestDeal";
 import TwoProduct from "../components/TwoProduct";
 import DiscountCounter from "../components/DiscountCounter";
+import TrendingProduct from "../components/TrendingProduct";
+import UpperFooter from "../components/UpperFooter";
 import FooterBlack from "../components/FooterBlack";
 
 const Home = () => {
@@ -29,6 +31,12 @@ const Home = () => {
 
     {/* Discout Counter Section */}
     <DiscountCounter />
+
+    {/* Trending Product Section */}
+    <TrendingProduct />
+
+    {/* Upper Footer Section */}
+    <UpperFooter />
 
     {/* Footer Section */}
     <FooterBlack />

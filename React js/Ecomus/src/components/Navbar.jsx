@@ -49,7 +49,7 @@ const Navbar = () => {
             <p>English</p>
           </div>
         </div>
-        <div className="header containerSection flex justify-between items-center bg-white shadow-lg  ">
+        <div className="header containerSection flex justify-between items-center bg-white shadow-lg py-6 md:py-8">
           <div className="lg:hidden block">
             <img src={ menuIcon } alt="" />
           </div>
@@ -61,8 +61,7 @@ const Navbar = () => {
               <ul className="flex gap-5">
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/shop">Shop</NavLink></li>
-                <li><NavLink to="/product">Product</NavLink></li>
-                <li><NavLink to="">Pages</NavLink></li>
+                <li><NavLink to="/product">Product</NavLink></li>     
                 <li><NavLink to="/about">About Us</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
                 <li><NavLink to="/faq">FAQ</NavLink></li>

@@ -1,6 +1,6 @@
 import React from "react";
-import { CiFacebook } from "react-icons/ci";
-import { FaInstagram, FaTiktok, FaPinterestSquare } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaInstagram, FaTiktok, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import visa from "../assets/images/asset 58.png";
 import footer1 from "../assets/images/asset 59.png";
@@ -8,169 +8,103 @@ import footer2 from "../assets/images/asset 60.png";
 import footer3 from "../assets/images/asset 61.png";
 import footer4 from "../assets/images/asset 62.png";
 import Logo from "../assets/images/asset 57.svg";
+import { GoArrowUpRight } from "react-icons/go";
 
 const FooterBlack = () => {
   return (
     <div>
       <footer className="containerSection bg-black text-white">
-        <div className="grid grid-cols-4 py-10">
-          <div className="mb-6 md:mb-0 lg:w-[25%] w-full flex flex-col gap-3 text-[14px] text-[#a1a1a1]">
-            <img src={Logo} alt="logo" className="mb-4 lg:w-full sm:w-1/2" />
-            <p className="sm:w-10/12 lg:w-full">
-              Address: 1234 Fashion Street, Suite 567 New York, NY 10001
-            </p>
-            <p className="flex gap-1">
-              Email: <a href=" ">info@fashionshop.com</a>
-            </p>
-            <p className="text-muted-foreground">
-              Phone: <span>(212) 555-1234</span>
-            </p>
-            <a href="#" className="text-primary hover:underline">
-              Get direction
-            </a>
+        <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 py-10">
+          <div className="text-[14px] text-[#a1a1a1] my-4">
+            <img src={Logo} alt="logo" className="" />
+            <p className="mt-5 tracking-wider leading-[32px]">Address: 1234 Fashion Street , Suite 567 New York, NY 10001</p>
+            <p className="flex gap-1 my-4">Email: <a href=" ">info@fashionshop.com</a></p>
+            <p className="text-muted-foreground my-4">Phone: <span>(212) 555-1234</span></p>
+            <div className='flex items-center underline underline-offset-8 duration-300 hover:text-[var(--primary-color)] my-4'>
+              <a href="" className='text-sm text-primary underline underline-offset-8'>Get direction</a>
+              <GoArrowUpRight className='ml-1' />
+            </div>
 
-            <div className="flex gap-3 sm:w-[500px]">
-              <div className="w-[40px] h-[40px]  flex items-center justify-center rounded-[50%] p-1  border">
-                <CiFacebook className="text-5xl" />
+            <div className="flex gap-2 mt-10">
+              <div className="rounded-[50%] border p-2 text-white hover:text-red-600 hover:border-red-600">
+                <FaFacebookF className="" />
               </div>
-              <div className="w-[46px] h-[40px]  flex items-center justify-center  rounded-[50%] p-1 border">
-                <FaXTwitter className="text-2xl" />
+              <div className="rounded-[50%] border p-2 text-white hover:text-red-600 hover:border-red-600">
+                <FaXTwitter className="" />
               </div>
-              <div className="w-[40px] h-[40px]  flex items-center justify-center  rounded-[50%] p-1 border">
-                <FaInstagram className="text-2xl" />
+              <div className="rounded-[50%] border p-2 text-white hover:text-red-600 hover:border-red-600">
+                <FaInstagram className="" />
               </div>
-              <div className="w-[40px] h-[40px]  flex items-center justify-center  rounded-[50%] p-1 border">
-                <FaTiktok className="text-2xl" />
+              <div className="rounded-[50%] border p-2 text-white hover:text-red-600 hover:border-red-600">
+                <FaTiktok className="" />
               </div>
-              <div className="w-[40px] h-[40px]  flex items-center justify-center  rounded-[50%] p-1 border">
-                <FaPinterestSquare className="text-2xl" />
+              <div className="rounded-[50%] border p-2 text-white hover:text-red-600 hover:border-red-600">
+                <FaPinterest className="" />
               </div>
             </div>
           </div>
-          <div className="mb-6 md:mb-0">
-            <h3 className="mb-3 text-[18px]">Help</h3>
-            <ul className="list-none flex flex-col gap-1 text-[14px] duration-1000 text-[#a1a1a1]">
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Returns + Exchanges
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Shipping
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  FAQ's
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Compare
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  My Wishlist
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-[18px]">About us</h3>
-            <ul className="list-none text-[14px] mt-2 text-[#a1a1a1]">
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Our Story
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Visit Our Store
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Account
-                </a>
-              </li>
-            </ul>
-          </div>
           <div className="">
-            <h3 className="font-semibold">Sign Up for Email</h3>
-            <p className="text-[14px] text-[#a1a1a1]">
-              Sign up to get first dibs on new arrivals, sales, exclusive
-              content, events and more!
-            </p>
-            <div className="flex relative w-full">
-              <input
-                type="email"
-                placeholder="Enter your email..."
-                className="border border-muted rounded-l-lg p-2 bg-[#bda6a628] w-[100%] h-12 "
-              />
-              <button className="bg-primary right-[3%] lg:right-[2%] sm:right-[3%] max-[37px]:right-[2%]  py-2 px-5 rounded-lg absolute top-[10%] bg-black  hover:bg-primary/80">
-                Subscribe
-              </button>
-            </div>
+            <h3 className="my-4 text-[17px] font-semibold tracking-wide">Help</h3>
+            <ul className="list-none text-[14px] text-[#a1a1a1]">
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Privacy Policy</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Returns + Exchanges</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Shipping</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Terms & Conditions</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">FAQ's</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Compare</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">My Wishlist</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="">
+            <h3 className="my-4 text-[16px] font-semibold tracking-wide">About us</h3>
+            <ul className="list-none text-[14px] text-[#a1a1a1]">
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Our Story</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Visit Our Store</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Contact Us</a>
+              </li>
+              <li className="my-3">
+                <a href="#" className="text-muted-foreground hover:text-[var(--primary-color)]">Account</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="">
+            <h3 className="my-4 text-[16px] font-semibold tracking-wide">Sign Up for Email</h3>
+            <p className="text-[14px] text-[#a1a1a1] tracking-wider leading-[32px] mb-5">Sign up to get first dibs on new arrivals, sales,exclusive content, events and more!</p>
+            <div className="relative lg:block xl:flex flex justify-between p-2 rounded bg-[#2c2c2c]">
+              <input type="email" placeholder="Enter your email..." className="p-2 bg-[#2c2c2c] border-none text-white"/>
+              <button className="btn btnDark rounded px-3 w-full text-center justify-center text-sm"> Subscribe <GoArrowUpRight /></button>
+          </div>
           </div>
         </div>
-        <hr />
+
+        <hr className="opacity-20" />
+
         {/* devloper name */}
 
         <div className="flex sm:flex-row flex-col items-center gap-3 sm:gap-0 sm:justify-between w-full py-6">
-          <p className="text-[14px] text-[#545454] ">
-            © 2024 Ecomus Store. All Rights Reserved
-          </p>
+          <p className="text-[14px] text-[#545454] ">© 2024 Ecomus Store. All Rights Reserved</p>
           <div className="flex gap-2">
             <img src={visa} alt="" />
             <img src={footer1} alt="" />

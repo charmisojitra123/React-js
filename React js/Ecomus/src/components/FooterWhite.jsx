@@ -8,6 +8,7 @@ import img2 from "../assets/images/asset 60.png";
 import img3 from "../assets/images/asset 61.png";
 import img4 from "../assets/images/asset 62.png";
 import logo from "../assets/images/asset 1.svg";
+import { GoArrowUpRight } from "react-icons/go";
 
 const FooterWhite = () => {
     const Help = [
@@ -40,17 +41,21 @@ const FooterWhite = () => {
   return (
     <div>
       <footer className="bg-white text-black flex h-auto items-center flex-col containerSection">
+
+      {/* Separator */}
+      <p className="h-[1px] bg-gray-200 w-[100%] my-10"></p>
+
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo and Contact */}
         <div className="flex flex-col gap-4">
           <img src={logo} alt="logo" className="mb-4 w-[150px]" />
-          <p>Address: 1234 Fashion Street, Suite 567 New York, NY 10001</p>
-          <p className="flex gap-1">
+          <p className='text-gray-600 pe-0 lg:pe-16 text-sm leading-[32px]'>Address: 1234 Fashion Street, Suite 567, New York, NY 10001</p>
+          <p className="flex gap-1 text-gray-600 text-sm">
             Email:{" "}
-            <a href="mailto:info@fashionshop.com">info@fashionshop.com</a>
+            <a href="mailto:info@fashionshop.com" className='font-semibold'>info@fashionshop.com</a>
           </p>
-          <p>
-            Phone: <span>(212) 555-1234</span>
+          <p className='text-gray-600 text-sm'>
+            Phone: <span className='font-semibold'>(212) 555-1234</span>
           </p>
           <a href="#" className="text-primary hover:underline">
             Get direction
@@ -69,10 +74,10 @@ const FooterWhite = () => {
 
         {/* Help Section */}
         <div>
-          <h3 className="mb-3 text-[18px]">Help</h3>
-          <ul className="list-none flex flex-col gap-1 text-[14px] text-[#a1a1a1]">
+          <h3 className="mb-4 text-[18px]">Help</h3>
+          <ul className="list-none flex flex-col gap-1 text-[14px] text-gray-600">
             {Help.map((link, id) => (
-              <li key={id}>
+              <li key={id} className='my-1'>
                 <a href={link.href} className="hover:text-[#db1215]">
                   {link.name}
                 </a>
@@ -83,10 +88,10 @@ const FooterWhite = () => {
 
         {/* About Us Section */}
         <div>
-          <h3 className="text-[18px]">About Us</h3>
-          <ul className="list-none flex flex-col gap-3 text-[14px] mt-2 text-[#a1a1a1]">
+          <h3 className="text-[18px] mb-4">About Us</h3>
+          <ul className="list-none flex flex-col gap-1 text-[14px] text-gray-600">
             {aboutLinks.map((link, id) => (
-              <li key={id}>
+              <li key={id} className='my-1'>
                 <a href={link.href} className="hover:text-[#db1215]">
                   {link.name}
                 </a>
@@ -98,32 +103,23 @@ const FooterWhite = () => {
         {/* Newsletter & Dropdown Section */}
         <div className="flex flex-col gap-5">
           <h3 className="font-semibold">Sign Up for Email</h3>
-          <p className="text-[14px] text-[#a1a1a1]">
-            Sign up to get first dibs on new arrivals, sales, exclusive content,
-            events, and more!
-          </p>
-          <div className="relative flex">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              className="border border-muted rounded-l-lg p-2 bg-[#bda6a628] w-full h-12"
-            />
-            <button className="bg-primary right-[3%] py-2 px-5 rounded-lg absolute top-[10%] bg-white ">
-              Subscribe
-            </button>
+          <p className="text-[14px] text-gray-600 leading-[32px]">Sign up to get first dibs on new arrivals, sales, exclusive content, events, and more!</p>
+          <div className="relative lg:block xl:flex flex justify-between p-2 rounded border border-muted ">
+            <input type="email" placeholder="Enter your email..." className="p-2"/>
+            <button className="btn btnDark rounded px-3 w-full text-center justify-center text-sm">Subscribe <GoArrowUpRight /></button>
           </div>
           <div className="flex justify-around text-black mt-4">
             {/* <Dropdown name="EUR" img={Eur} /> */}
             <div className="text-black flex items-center gap-2 relative">
-              <p>ENGLISH</p>
               <i className="ri-arrow-down-s-line text-black"></i>
             </div>
           </div>
         </div>
       </div>
 
+      
       {/* Separator */}
-      <p className="h-[1px] bg-black w-[100%] mt-10"></p>
+      <p className="h-[1px] bg-gray-200 w-[100%] mt-10"></p>
 
       {/* Footer Bottom */}
       <div className="flex sm:flex-row flex-col items-center justify-between w-full py-6 gap-3 sm:gap-0">

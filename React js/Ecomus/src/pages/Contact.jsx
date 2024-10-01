@@ -1,10 +1,13 @@
 import React from 'react'
 import InnerBanner from '../helpers/InnerBanner'
 import ContactInfo from '../components/ContactInfo'
+import FooterWhite from '../components/FooterWhite'
 
 const Contact = () => {
   return (
     <div>
+
+      {/* Inner Banner Section */}
       <InnerBanner innerBannerTile="Contact Us" innerBannerBreadcrumbs = "Contact Us"/>
 
       {/* Map Section */}
@@ -15,6 +18,9 @@ const Contact = () => {
       {/* Contact Info */}
       <ContactInfo/>
 
+      {/* Footer */}
+      <FooterWhite/>
+ 
     </div>
   )
 }

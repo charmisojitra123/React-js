@@ -2,14 +2,21 @@ import React from 'react'
 import InnerBanner from '../helpers/InnerBanner'
 // import ProductSide from '../components/ProductSide'
 import ZoomSection from '../helpers/ZoomSection'
+import FooterWhite from '../components/FooterWhite'
 
 const Product = () => {
   return (
     <div>
-      <InnerBanner innerBannerTile="Product" innerBannerBreadcrumbs = "Product"/>
+      {/* Inner Banner Section */}
+        <InnerBanner innerBannerTile="Product" innerBannerBreadcrumbs = "Product"/>
+
       {/* <ProductSide /> */}
       <ZoomSection />
-    </div>
+
+      {/* Footer */}
+      <FooterWhite/>
+    
+  </div>
   )
 }
 
