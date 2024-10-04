@@ -1,6 +1,6 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import React from "react";
-import { ProductImages } from "../assets/ProductImage";
+import { ProductImages } from '../assets/ProductImage';
 import "@splidejs/splide/dist/css/splide.min.css";
 // import style from "../CSS/Zoom.module.css";
 

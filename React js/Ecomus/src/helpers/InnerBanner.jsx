@@ -7,11 +7,13 @@ const InnerBanner = ({innerBannerTile , innerBannerBreadcrumbs}) => {
     <div>
         <div className='text-center innerBannerSection py-12 md:py-16'>
             <h1 className='text-4xl md:text-5xl mb-5 tracking-wide capitalize'>{innerBannerTile}</h1>
-            <p className='text-sm md:text-base flex items-center justify-center capitalize'><NavLink to='/'>Home</NavLink> <MdKeyboardArrowRight className='mx-5' /> {innerBannerBreadcrumbs}</p>
-        </div>
-      
+            <p className='text-sm md:text-base flex items-center justify-center capitalize'><NavLink to='/'> Home </NavLink> <MdKeyboardArrowRight className='mx-5' />{innerBannerBreadcrumbs}</p>
+        </div>      
     </div>
   )
 }
 
 export default InnerBanner
+
+
+// 6355556922 Janviiii

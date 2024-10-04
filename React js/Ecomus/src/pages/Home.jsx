@@ -6,6 +6,7 @@ import BestDeal from "../components/BestDeal";
 import TwoProduct from "../components/TwoProduct";
 import DiscountCounter from "../components/DiscountCounter";
 import TrendingProduct from "../components/TrendingProduct";
+import BlogHome from "../components/BlogHome";
 import UpperFooter from "../components/UpperFooter";
 import FooterBlack from "../components/FooterBlack";
 
@@ -34,6 +35,9 @@ const Home = () => {
 
     {/* Trending Product Section */}
     <TrendingProduct />
+
+
+    <BlogHome/>
 
     {/* Upper Footer Section */}
     <UpperFooter />
