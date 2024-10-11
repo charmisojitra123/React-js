@@ -6,6 +6,7 @@ const ToggleState = () => {
     const toggleHandler = () => {
         setToggleState(!toggleState)
     }
+    
   return (
     <div className='Toggle'>
         <h1>Toggle State: {toggleState.toString()}</h1>
